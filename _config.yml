@@ -4,7 +4,7 @@ description:      This is the website and blog of Glendon Cheney, a software dev
 disqus_shortname: gcheney
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
-logo:             # logo visible in the topbar
+logo:             images/logo.svg # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
@@ -22,12 +22,11 @@ menu:
     url: '/about/'
   - title: 'Projects'
     url: '/projects/'
-  - title: 'Posts'
-    url: '/posts'
-  - title: 'Tags'
-    url: '/tags'
-  - title: 'Categories'
-    url: '/categories'
+  - title: 'Blog'
+    url: '/blog/'
+  - title: 'Contact'
+    url: '/contact/'
+
 
 # Owner/author information
 owner:
@@ -54,7 +53,7 @@ social:
   - title: "youtube"
     url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
 # Background image to be tiled on all pages
-background:
+background: 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
@@ -77,6 +76,7 @@ permalink:   /:categories/:title/
 
 # Amount of post to show on home page
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 # if true, shows the floatting share buttons
 float_share: 
