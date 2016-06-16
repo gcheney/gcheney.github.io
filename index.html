@@ -1,223 +1,48 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Glendon Cheney | Home Page</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="The personal website and blog of Glendon Cheney">
-    <meta name="author" content="Glendon Cheney">
-    
-    <!-- Facebook Open Graph meta tags -->
-    <meta property="og:title" content="Glendon Cheney | Website & Blog"/>
-    <meta property="og:image" content="https://www.glendoncheney.com/images/avatar-min.jpg"/>
-    <meta property="og:site_name" content="Glendon Cheney Home Page"/>
-    <meta property="og:description" content="The main site and blog of Glendon Cheney."/>
-	
-    <link rel="stylesheet" href="assets/css/styles.min.css" />
-    <link rel="canonical" href="https://www.glendoncheney.com" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    
-    <script>
-        //Hack to force https on the domain
-        var host = "www.glendoncheney.com";
-        if ((host === window.location.host) && (window.location.protocol !== "https:")) {
-            window.location.protocol = "https";
-        }
-    </script>
-</head>
-<body>
+---
+layout: post-index
+title: "Welcome to the Neo-HPSTR Blog"
+description: "Describe this nonsense."
+tags: [Jekyll, theme, themes, responsive, blog, modern]
+comments: false
+---
 
-    <!-- Header -->
-    <section id="header">
-        <header>
-            <span class="image avatar"><img src="images/avatar-min.jpg" alt="My face" /></span>
-            <h1 id="logo"><a href="#">Glendon Cheney</a></h1>
-            <p>Full-stack developer <br />and film score composer<br />
-            <i class="icon fa fa-map-marker"></i>  Austin, TX </p>
-        </header>
-        <nav id="nav">
-            <ul>
-                <li><a href="#about" class="active">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Interest</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/music">Music</a></li>
-            </ul>
-        </nav>
-        <footer>
-            <ul class="icons">
-                <li>
-                    <a href="https://github.com/gcheney" target="_blank">
-                        <span class="label"><i class="icon fa fa-github"></i></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/glendon-cheney-3a680926" target="_blank">
-                        <span class="label"><i class="icon fa fa-linkedin"></i></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://soundcloud.com/glencheney" target="_blank">
-                        <span class="label"><i class="icon fa fa-soundcloud"></i></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/glendoncheney" target="_blank">
-                        <span class="label"><i class="icon fa fa-twitter"></i></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:glendon@glendoncheney.com" target="_blank">
-                        <span class="label"><i class="icon fa fa-envelope"></i></span>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-    </section>
+{% for post in paginator.posts %}
+<article class="hentry">
+  <header>
+    {% if post.image.feature %}
+      <div class="entry-image-index">
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
+        {% if post.image.credit %}<div class="image-credit">Image source: <a target="_blank" href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Main -->
-        <div id="main">
-
-            <!-- About -->
-            <section id="about">
-                <div class="container">
-                    <header class="major">
-                        <h3>Hey there, I'm Glendon (Glen) Cheney</h3>
-                        <p>I'm a full-stack web developer and film composer living in <a href="https://en.wikipedia.org/wiki/Austin,_Texas"  target="_blank" class="link">Austin, Texas</a>.</p>
-                    </header>
-                    <p>
-                        Currently, I work at <a href="https://wpengine.com/" target="_blank" class="link">WP Engine</a>. In my spare time I can be found working on new projects at <a href="https://github.com/gcheney" target="_blank" class="link">Github</a>, making new music on <a href="https://soundcloud.com/glencheney/sets" target="_blank" class="link">Soundcloud</a>, or doing coding challenges on <a href="https://www.hackerrank.com/gcheney" target="_blank" class="link">HackerRank</a>. 
-                        <br /><br />
-                        After graduating from <a href="https://www.berklee.edu/" target="_blank" class="link">Berklee College of Music</a>, I spent four years living and working in <a href="https://en.wikipedia.org/wiki/Austin,_Texas"  target="_blank" class="link">Los Angeles</a> as a film composer, and had the opportunity to work on quite a few <a href="http://www.imdb.com/name/nm3862321/?ref_=fn_al_nm_1"  target="_blank" class="link">interesting projects</a>. While I still enjoy creating music, I am currently focused on my new found passion for programming, software development and the web. You can keep up with my latest work <a href="#projects"  class="link">here</a>  and  read my thoughts on programming and code at <a href="http://glendoncheney.com/blog/"  target="_blank" class="link">my blog</a>.
-                    </p>  
-                    <p>Thanks for stopping by!</p>
-                </div>
-            </section>
-            
-            <!-- Projects -->
-            <section id="projects">
-                <div class="container">
-                    <h3>Some of my Current Projects</h3>
-                    <p>Below you can find details on the projects I am currently working on, along with lnks to their relevant web pages or Github repos.</p>
-                    <div class="features">
-                        <article>
-                            <a href="#" class="image"><img src="/images/placeholder.png" alt="" /></a>
-                            <div class="inner">
-                                <a href=""><h4>Super Chef</h4></a>
-                                <p>This project is no where near finished - please check back later for more details! </p>
-                                <a href="#" class="link">
-                                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Visit Site
-                                </a>
-                                <a href="https://github.com/gcheney/super-chef" class="link" target="_blank">
-                                    <i class="fa fa-github"></i>&nbsp; View on Github
-                                </a>
-                            </div>
-                        </article>
-                        <article>
-                            <a href="#" class="image"><img src="/images/placeholder.png" alt="" /></a>
-                            <div class="inner">
-                                <a href=""><h4>Test Post - Please ignore!</h4></a>
-                                <p>Nothing to see here, move along!</p>
-                                <a href="#" class="link">
-                                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Visit Site
-                                </a>
-                                <a href="https://github.com/gcheney/super-chef" class="link" target="_blank">
-                                    <i class="fa fa-github"></i>&nbsp;View on Github
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills -->
-            <section id="skills">
-                <div class="container">
-                    <h3>A Few of my Interest</h3>
-                    <p>A random assortment of interest and hobbies I have, complete with matching Font Awesome icons.</p>
-                    <ul class="feature-icons">
-                        <li class="fa fa-code">Writing <a href="https://github.com/gcheney" target="_blank" class="link">some code</a> </li>
-                        <li class="fa fa-pencil">Making <a href="http://glendoncheney.com/blog/"  target="_blank" class="link">blog post</a></li>
-                        <li class="fa fa-book">Reading <a href="http://www.amazon.com/gp/product/0345535529/ref=pd_lpo_sbs_dp_ss_1?pf_rd_p=1944687582&pf_rd_s=lpo-top-stripe-1&pf_rd_t=201&pf_rd_i=0307292134&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=1F8Y3XEBH13Y1WGBNE0D"  target="_blank" class="link">great books</a></li>
-                        <li class="fa fa-coffee">Drinking <a href="http://www.amazon.com/Death-Wish-Coffee-Strongest-Certified/dp/B006CQ1ZHI/ref=sr_1_1?s=grocery&ie=UTF8&qid=1461774934&sr=1-1-spons&keywords=death+wish+coffee&psc=1"  target="_blank" class="link">insane coffee</a></li>
-                        <li class="fa fa-music">Composing <a href="https://soundcloud.com/glencheney/sets"  target="_blank" class="link">cinematic music</a></li>
-                        <li class="fa fa-television">Watching <a href="http://www.imdb.com/title/tt2575988/"  target="_blank" class="link">good shows</a></li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Contact -->
-            <section id="contact">
-                <div class="container">
-                    <h3>Get In Touch</h3>
-                    <p>Feel free to drop me a line if you're interested in talking or working todether,  or just want to say "Hello!"</p>
-                    <form method="post" action="https://formspree.io/glendon@glendoncheney.com">
-                        <div class="row uniform">
-                            <div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                            <div class="6u 12u(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
-                        </div>
-                        <div class="row uniform">
-                            <div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-                        </div>
-                        <div class="row uniform">
-                            <div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-                        </div>
-                        <div class="row uniform">
-                            <div class="12u">
-                                <ul class="actions">
-                                    <li><input type="submit" class="special" value="Send Message" /></li>
-                                    <li><input type="reset" value="Reset Form" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
+      </div><!-- /.entry-image -->
+    {% endif %}
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+      {% if site.reading_time %}
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        {% assign readtime = post.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
+        Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+      </span><!-- /.entry-reading-time -->
+      {% endif %}
+    </div><!-- /.entry-meta -->
+    {% if post.link %}
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
+    {% else %}
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
+    {% endif %}
+  </header>
+  <div class="entry-content">
+    {% if post.content contains "<!-- more -->" %}
+        {{ post.content | split:"<!-- more -->" | first % }}
+        <div align="center">
+            <div markdown="0"><a href="{{ site.url }}{{ post.url }}" class="btn btn-info">Continue Reading ...</a></div>
         </div>
+    {% else %}
+      {{ post.content }}
+    {% endif %}
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+{% endfor %}
 
-        <!-- Footer -->
-        <section id="footer">
-            <div class="container">
-                <ul class="copyright">
-                    <li>&copy;2016 Glendon Cheney. All rights reserved.</li>
-                    <li>Template from: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </section>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/vendor/jquery-1.9.1.min.js"></script>
-    <script src="assets/js/vendor/jquery.scrollzer.min.js"></script>
-    <script src="assets/js/vendor/jquery.scrolly.min.js"></script>
-    <script src="assets/js/vendor/skel.min.js"></script>
-    <script src="assets/js/util.min.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/site.min.js"></script>
-
-</body>
-</html>
+{% include pagination.html %}

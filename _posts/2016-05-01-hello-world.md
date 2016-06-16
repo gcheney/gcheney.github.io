@@ -15,6 +15,8 @@ Hello world and welcome to my very first post! As a long time Wordpress user thi
 
 I will take it one step further though and make this "Hello World" post *about* the famous first programming example so many books and tutorials have used over the years. Ever since it first appeared in the [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language), the "Hello world" example has been the go to introduction to a new programming langauge for most software developers. In honor of that, I will present "Hello World" `foreach` of the current [Tiobe Index](http://www.tiobe.com/tiobe_index) top ten programming langauges as of April 2016. This will be a great way to learn a bit of what makes each of these langauges unique in both their syntax and their design philosophy (plus it will let me test out the code highlighting styles). Lets get started! 
 
+<!-- more -->
+
 ### 1. Java
 
 {% highlight java %}
