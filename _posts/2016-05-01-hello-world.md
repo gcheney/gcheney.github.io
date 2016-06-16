@@ -4,7 +4,8 @@ title: Hello World
 description: 
 modified: 2016-05-01
 comments: true
-tags: [sample post, code, highlighting, first, programming, languages]
+tags: [code, highlighting, first, programming, languages]
+categories: [programming]
 image:
   feature: helloworld-toast-min.jpg
   credit: Windell Oskay
