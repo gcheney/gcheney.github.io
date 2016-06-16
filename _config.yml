@@ -4,7 +4,7 @@ description:      This is the website and blog of Glendon Cheney, a software dev
 disqus_shortname: gcheney
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
-logo:             images/logo.svg # logo visible in the topbar
+logo:             images/logo2.svg # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
@@ -18,8 +18,6 @@ url: http://127.0.0.1:4000
 menu:
   - title: 'Home'
     url: '/'
-  - title: 'About'
-    url: '/about/'
   - title: 'Projects'
     url: '/projects/'
   - title: 'Blog'
@@ -72,7 +70,7 @@ sass:
   style: compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+permalink:   blog/:categories/:title/
 
 # Amount of post to show on home page
 paginate: 5
