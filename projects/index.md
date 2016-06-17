@@ -1,10 +1,11 @@
 ---
 layout: page
-title: My Projects
+title: Projects
 description: "Projects Page"
 share: false
 comments: false
 ---
+<h1 style="text-align: center;">Personal Projects</h1>
 
 # Neo-HPSTR Jekyll Theme
 
