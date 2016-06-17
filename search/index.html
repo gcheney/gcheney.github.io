@@ -6,7 +6,16 @@ comments: false
 
 <article>
   <div style="text-align: center">
-    <h3>Finds a post by title, tag, category, date and url.</h3>
+    <h3>View post by:</h3>
+    <ul class="list-inline">
+      <li><a href="{{site.url}}/categories" class="link"><h4>Category</h4></a></li>
+      <li><a href="{{site.url}}/tags" class="link"><h4>Tag</h4></a></li>
+      <li><a href="{{site.url}}/posts" class="link"><h4>All Posts</h4></a></li>
+    </ul>
+  </div>
+
+  <div style="text-align: center">
+    <h3>Find a post by title, tag, category, date or url.</h3>
     <input type="text" id="search-input"/>
   </div>
   <h3>Results:</h3>

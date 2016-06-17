@@ -4,7 +4,7 @@ description:      This is the website and blog of Glendon Cheney, a software dev
 disqus_shortname: gcheney
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
-logo:             images/logo2.svg # logo visible in the topbar
+logo:             images/logo.svg # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
@@ -20,10 +20,8 @@ menu:
     url: '/'
   - title: 'Projects'
     url: '/projects/'
-  - title: 'Blog'
-    url: '/blog/'
-  - title: 'Contact'
-    url: '/contact/'
+  - title: 'About'
+    url: '/about/'
 
 
 # Owner/author information
@@ -48,8 +46,10 @@ social:
     url: "https://github.com/gcheney"
   - title: "linkedin"
     url: "https://www.linkedin.com/in/glendon-cheney-3a680926"
-  - title: "youtube"
-    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
+  - title: "soundcloud"
+    url: "https://soundcloud.com/glencheney"
+  - title: "twitter"
+    url: "https://twitter.com/glendoncheney"
 # Background image to be tiled on all pages
 background: 
 
@@ -70,11 +70,11 @@ sass:
   style: compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   blog/:categories/:title/
+permalink:   :categories/:title/
 
 # Amount of post to show on home page
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 
 # if true, shows the floatting share buttons
 float_share: 

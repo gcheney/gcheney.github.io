@@ -1,7 +1,9 @@
 ---
 layout: page
-title: About
-share: true
+title: My Projects
+description: "Projects Page"
+share: false
+comments: false
 ---
 
 # Neo-HPSTR Jekyll Theme

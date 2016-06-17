@@ -2,9 +2,9 @@
 layout: post
 title: Hello World
 description: 
-modified: 2016-05-01
+modified: 2016-06-17
 comments: true
-tags: [code, highlighting, first, programming, languages]
+tags: [code, programming, languages, general]
 categories: [programming]
 image:
   feature: helloworld-toast-min.jpg

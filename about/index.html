@@ -1,0 +1,32 @@
+---
+layout: page
+title: About Me
+description: "About Page"
+comments: false
+share: false
+---
+
+
+<div class="read-more">
+  <div class="read-more-content author-info">
+    <div class="author-container">
+      <img class="author-img" src="{{site.url}}/{{site.owner.avatar}}" alt="{{site.owner.name}}" />
+      <h4 class="author-bio">Hi there, My name is Glendon Cheney. I'm a full-stack web developer and film composer living in <a href="https://en.wikipedia.org/wiki/Austin,_Texas" target="_blank" class="link">Austin, Texas</a>.</h4>
+    </div>
+    <div class="author-share">
+      <ul class="list-inline social-buttons">
+        {% for network in site.social %}
+          <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<p>
+    Currently, I work at <a href="https://wpengine.com/" target="_blank" class="link">WP Engine</a>. In my spare time I can be found working on new projects at <a href="https://github.com/gcheney" target="_blank" class="link">Github</a>, making new music on <a href="https://soundcloud.com/glencheney/sets" target="_blank" class="link">Soundcloud</a>, or doing coding challenges on <a href="https://www.hackerrank.com/gcheney" target="_blank" class="link">HackerRank</a>. 
+    <br /><br />
+    After graduating from <a href="https://www.berklee.edu/" target="_blank" class="link">Berklee College of Music</a>, I spent four years living and working in <a href="https://en.wikipedia.org/wiki/Austin,_Texas"  target="_blank" class="link">Los Angeles</a> as a film composer, and had the opportunity to work on quite a few <a href="http://www.imdb.com/name/nm3862321/?ref_=fn_al_nm_1"  target="_blank" class="link">interesting projects</a>. While I still enjoy <a href="https://soundcloud.com/glencheney"  target="_blank" class="link">creating music</a>, I am currently focused on my new found passion for programming, software development and the web. You can keep up with my latest work <a href="#projects"  class="link">here</a>  and  read my thoughts on programming and code on <a href="http://glendoncheney.com/blog/"  target="_blank" class="link">my blog</a>.
+</p>  
+
+<p>Thanks for stopping by!</p>
