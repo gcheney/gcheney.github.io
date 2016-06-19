@@ -50,6 +50,8 @@ social:
     url: "https://soundcloud.com/glencheney"
   - title: "twitter"
     url: "https://twitter.com/glendoncheney"
+  - title: "envelope"
+    url: "mailto:glendon@glendoncheney.com"
 # Background image to be tiled on all pages
 background: 
 
