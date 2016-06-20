@@ -70,6 +70,8 @@ figure.center img{
 .btn {
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
   padding: 8px 20px;
   @include font-rem(14);
   background-color: $primary;
