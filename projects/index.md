@@ -7,114 +7,137 @@ comments: false
 ---
 <h1 class="center">Personal Projects</h1>
 
-Here you can find a few of my personal projects that I have creatd or are currently developing. Check out the Github repo or the Live demo, if there is one. The projects are devided into the following categories, based on their interface:
+Here you can find a few of my personal projects that I have creatd or are currently developing. The projects are devided into the following categories, based on their interface:
 
 
 * [Web](#web-projects)
 * [GUI](#gui-projects)
 * [CLI](#cli-projects)
 
-
+All projects have a link to their respective Github repos as well as the live demo, if there is one. Feel free to fork any that interest you!
 
 <hr>
 
 <h1 class="center" id="web-projects">Web Projects</h1>
 
-### One Up
+<hr>
 
-<figure>
-	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg">
-        <img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" alt="">
-    </a>
-	<figcaption>
-        <a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.
-    </figcaption>
-</figure>
-
-### One Center
-
-<figure class="half center">
-	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" alt=""></a>
-	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
-</figure>
-
-### Two Up
-
-Apply the `half` class like so to display two images side by side that share the same caption.
-
-{% highlight html %}
-<figure class="half">
-	<img src="/images/image-filename-1.jpg" alt="">
-	<img src="/images/image-filename-2.jpg" alt="">
-	<figcaption>Caption describing these two images.</figcaption>
-</figure>
-{% endhighlight %}
-
-And you'll get something that looks like this:
+<h2 class="center">Thoughtwave</h2>
+<h3 class="center">A blogging platform for sharing your thoughts with the world.</h3>
 
 <figure class="half">
 	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
 	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<img src="http://placehold.it/600x300.jpg" alt="">
-	<img src="http://placehold.it/600x300.jpg" alt="">
-	<figcaption>Two images.</figcaption>
+    <a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<figcaption>Project screenshots.</figcaption>
 </figure>
 
-### Three Up
+I will provide further details on the project here as they become available. Currently, this project is in its early stages. Check back for more updates! 
+<div class="center">
+    <a class="btn btn-primary" href="https://pacific-inlet-57115.herokuapp.com/">View Demo&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    <a class="btn btn-primary" href="https://github.com/gcheney/thoughtwave">View Github&nbsp;<i class="fa fa-github" aria-hidden="true"></i></a>
+</div>
 
-Apply the `third` class like so to display three images side by side that share the same caption.
+<hr>
 
-{% highlight html %}
-<figure class="third">
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<figcaption>Caption describing these three images.</figcaption>
-</figure>
-{% endhighlight %}
+<h2 class="center">Project Two</h2>
+<h3 class="center">Coming Soon.</h3>
 
-And you'll get something that looks like this:
-
-<figure class="third">
+<figure class="half">
 	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
 	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+    <a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
 	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<figcaption>Three images.</figcaption>
+	<figcaption>Project screenshots.</figcaption>
 </figure>
 
-### Alternative way
+I will provide further details on the project here as they become available. Currently, this project is in its early stages. Check back for more updates! 
+<div class="center">
+    <a class="btn btn-primary" href="#">View Demo&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    <a class="btn btn-primary" href="#">View Github&nbsp;<i class="fa fa-github" aria-hidden="true"></i></a>
+</div>
 
-Another way to achieve the same result is to include `gallery` Liquid template. In this case you
-don't have to write any HTML tags – just copy a small block of code, adjust the parameters (see below)
-and fill the block with any number of links to images. You can mix relative and external links.
+<hr>
 
-Here is the block you might want to use:
+<h1 class="center" id="gui-projects">GUI Projects</h1>
 
-{% highlight jinja %}
-{% raw %}
-{% capture images %}
-	/images/abstract-10.jpg
-	/images/abstract-11.jpg
-	http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
-{% endcapture %}
-{% include gallery images=images caption="Test images" cols=3 %}
-{% endraw %}
-{% endhighlight %}
+<hr>
 
-Parameters:
+<h2 class="center">Project One</h2>
+<h3 class="center">Coming Soon.</h3>
 
-- `caption`: Sets the caption under the gallery (see `figcaption` HTML tag above);
-- `cols`: Sets the number of columns of the gallery.
-Available values: [1..3].
+<figure class="half">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+    <a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<figcaption>Project screenshots.</figcaption>
+</figure>
 
-It will look something like this:
+I will provide further details on the project here as they become available. Currently, this project is in its early stages. Check back for more updates! 
+<div class="center">
+    <a class="btn btn-primary" href="#">View Demo&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    <a class="btn btn-primary" href="#">View Github&nbsp;<i class="fa fa-github" aria-hidden="true"></i></a>
+</div>
 
-{% capture images %}
-	/images/abstract-10.jpg
-	/images/abstract-11.jpg
-	http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
-{% endcapture %}
-{% include gallery images=images caption="Test images" cols=3 %}
+<hr>
+
+<h2 class="center">Project Two</h2>
+<h3 class="center">Coming Soon.</h3>
+
+<figure class="half">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+    <a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<figcaption>Project screenshots.</figcaption>
+</figure>
+
+I will provide further details on the project here as they become available. Currently, this project is in its early stages. Check back for more updates! 
+<div class="center">
+    <a class="btn btn-primary" href="#">View Demo&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    <a class="btn btn-primary" href="#">View Github&nbsp;<i class="fa fa-github" aria-hidden="true"></i></a>
+</div>
+
+
+<hr>
+
+<h1 class="center" id="cli-projects">CLI Projects</h1>
+
+<hr>
+
+<h2 class="center">Project One</h2>
+<h3 class="center">Coming Soon.</h3>
+
+<figure class="half">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+    <a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<figcaption>Project screenshots.</figcaption>
+</figure>
+
+I will provide further details on the project here as they become available. Currently, this project is in its early stages. Check back for more updates! 
+<div class="center">
+    <a class="btn btn-primary" href="#">View Github&nbsp;<i class="fa fa-github" aria-hidden="true"></i></a>
+</div>
+
+<hr>
+
+<h2 class="center">Project Two</h2>
+<h3 class="center">Coming Soon.</h3>
+
+<figure class="half">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+    <a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<figcaption>Project screenshots.</figcaption>
+</figure>
+
+I will provide further details on the project here as they become available. Currently, this project is in its early stages. Check back for more updates! 
+<div class="center">
+    <a class="btn btn-primary" href="#">View Github&nbsp;<i class="fa fa-github" aria-hidden="true"></i></a>
+</div>
+
