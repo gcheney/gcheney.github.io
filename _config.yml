@@ -28,7 +28,7 @@ menu:
 owner:
   name:           Glendon Cheney
   site:           https://www.glendoncheney.com
-  avatar:         images/avatar.jpg
+  avatar:         images/avatar-min.jpg
   bio:            "Full-stack web developer born, raised, and living in Austin, Texas."
   email:          glendon@glendoncheney.com
   # Twitter nick for use in Twitter cards and follow button.
