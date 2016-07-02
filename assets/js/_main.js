@@ -95,3 +95,12 @@ var sharing = function(){
       });
     });
 };//sharing
+
+//add image tranition on hover
+$(document).ready(function() {
+    $('.hover').hover(function() {
+        $(this).addClass('transition');  
+    }, function() {
+        $(this).removeClass('transition');
+    });
+});
