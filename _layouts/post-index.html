@@ -10,8 +10,12 @@
 <body id="post-index">
 
 {% include browser-upgrade.html %}
-{% include home-header.html %}
-
+{% if page.title == "Home" %}
+    {% include home-header.html %}
+{% else %}
+    {% include header.html %}
+{% endif %}
+    
 <div id="main" role="main">
   {{ content }}
 </div><!-- /#main -->
