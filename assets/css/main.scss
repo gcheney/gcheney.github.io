@@ -1,17 +1,9 @@
 ---
 sitemap: false
+# Front matter comment to ensure Jekyll properly reads file.
 ---
 
-/*
- *
- *  HPSTR
- *
- *  Designer: Michael Rose
- *  Twitter: http://twitter.com/mmistakes
- *
-*/
-
-// Partials
+// Import Partials
 @import "variables";
 @import "mixins";
 @import "reset";
@@ -26,3 +18,4 @@ sitemap: false
 @import "animations";
 @import "dl-menu";
 @import "page";
+
