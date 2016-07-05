@@ -10,16 +10,16 @@ share: false
 
 <div class="container">
     <form id="contact" method="POST">
-        <input type="hidden" name="_subject" value="New website contact!" />
+        <input type="hidden" name="_subject" value="New Website Contact Form Submission" />
         <input type="text" name="_gotcha" style="display:none" />
         <fieldset>
-            <input type="text" name="name" placeholder="Your name">
+            <input type="text" name="name" placeholder="Your name" required>
         </fieldset>
         <fieldset>
-            <input type="email" name="_replyto" placeholder="Your email">
+            <input type="email" name="_replyto" placeholder="Your email" required>
         </fieldset>
         <fieldset>
-            <textarea name="message" placeholder="Your message"></textarea>
+            <textarea name="message" placeholder="Your message" required></textarea>
         </fieldset>
         <fieldset>
             <input class="btn" type="submit" value="Send">
