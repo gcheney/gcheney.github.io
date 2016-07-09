@@ -80,13 +80,15 @@ $(document).ready(function(){
           "<a class='fa fa-search' href='/search'></a>",
           "<a class='fa fa-envelope' href='mailto:glendon@glendoncheney.com'></a>",
           "<a class='fa fa-github' href='https://github.com/gcheney'></a>",
-          "<a class='fa fa-twitter' href='https://twitter.com/glendoncheney'></a>"
+          "<a class='fa fa-linkedin' href='https://www.linkedin.com/in/glendon-cheney-3a680926'></a>"
         ]
       }
     ]
   });
 });
 
+
+//floating social share
 var sharing = function(){
     $(document).ready(function(){
       $("body").floatingSocialShare({
@@ -94,7 +96,7 @@ var sharing = function(){
         text: "Share with "
       });
     });
-};//sharing
+};
 
 //add image tranition on hover
 $(document).ready(function() {

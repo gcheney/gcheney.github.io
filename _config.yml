@@ -26,14 +26,12 @@ menu:
 
 # Owner/author information
 owner:
-  name:           Glendon Cheney
-  site:           https://www.glendoncheney.com
-  avatar:         images/avatar-min.jpg
-  bio:            "Full-stack web developer born, raised, and living in Austin, Texas."
-  email:          glendon@glendoncheney.com
-  # Twitter nick for use in Twitter cards and follow button.
-  twitter: glendoncheney # if no twitter in this config, the twitter follow button will be removed
-  # GitHub nick for use in follow button in author block.
+  name: Glendon Cheney
+  site: https://glendoncheney.com
+  avatar: images/avatar-min.jpg
+  bio: "I am a software developer and musician. Born, raised, and currently living in Austin, Texas."
+  email: glendon@glendoncheney.com
+  twitter: 
   github: gcheney
 
 # Twitter account associated with the site if different from owner/author twitter account.
@@ -48,8 +46,6 @@ social:
     url: "https://www.linkedin.com/in/glendon-cheney-3a680926"
   - title: "soundcloud"
     url: "https://soundcloud.com/glencheney"
-  - title: "twitter"
-    url: "https://twitter.com/glendoncheney"
   - title: "envelope"
     url: "mailto:glendon@glendoncheney.com"
 # Background image to be tiled on all pages
