@@ -1,18 +1,11 @@
 title:            Glendon Cheney
 description:      This is the website and blog of Glendon Cheney, a software developer and musician.
 disqus_shortname: gcheney
-reading_time:     true # if true, shows the estimated reading time for a post
+reading_time:     true 
 words_per_minute: 200
-logo:             images/logo.svg # logo visible in the topbar
-# site's domain goes here 
-# When testing locally leave blank or use http://localhost:4000
+logo:             images/logo.svg 
 url: https://glendoncheney.com
 
-# draw your top menu here
-# each item must have a title and a url.
-#   To list post categories. use type: 'categories'
-#   To create sub categories. add a submenu item
-# See the example
 menu:
   - title: 'Home'
     url: '/'
@@ -30,11 +23,10 @@ owner:
   avatar: images/avatar-min.jpg
   bio: "I am a software developer and musician. Born, raised, and currently living in Austin, Texas."
   email: glendon@glendoncheney.com
-  twitter: 
+  twitter: glendoncheney
   github: gcheney
 
-# Twitter account associated with the site if different from owner/author twitter account.
-# Used in Twitter cards.
+# Twitter account associated with the site
 twitter: 
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
@@ -49,14 +41,14 @@ social:
     url: "https://twitter.com/glendoncheney"
   - title: "envelope"
     url: "mailto:glendon@glendoncheney.com"
+    
 # Background image to be tiled on all pages
 background: 
 
-# Analytics and webmaster tools stuff goes here
+# Analytics and webmaster tools
 google_analytics:
 google_verify:
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Chicago
 locale:      en_US
 future:      true
@@ -68,16 +60,16 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
+#post permalinks
 permalink:   :title/
 
 # Amount of post to show on home page
 paginate: 5
 paginate_path: "/page:num/"
 
-# if true, shows the floatting share buttons
 float_share: 
 
+#Kramdown settings
 kramdown:
   auto_ids: true
   footnote_nr: 1
@@ -99,7 +91,7 @@ page_ext: md
 # Found in _templates/
 post_layout: post
 page_layout: page
-# Format titles with titlecase?
+# Format titles with titlecase
 titlecase: true
 
 include: [".htaccess"]
