@@ -1,4 +1,4 @@
-/*! Plugin options and other jQuery stuff */
+/*! Plugin options and jQuery */
 
 // dl-menu options
 $(function() {
@@ -98,7 +98,7 @@ var sharing = function(){
     });
 };
 
-//add image tranition on hover
+//add tranition on hover
 $(document).ready(function() {
     $('.hover').hover(function() {
         $(this).addClass('transition');  
@@ -106,3 +106,16 @@ $(document).ready(function() {
         $(this).removeClass('transition');
     });
 });
+
+//built-in scroll animation
+$(document).ready(function(){
+    $("a[href^=#]").click(function(e) { 
+        e.preventDefault(); 
+        var dest = $(this).attr('href'); 
+        history.pushState(null, null, dest);
+        $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow');
+    });
+});
+
+
+
