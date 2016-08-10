@@ -1,5 +1,5 @@
 title:            Glendon Cheney
-description:      This is the website and blog of Glendon Cheney, a software developer and musician.
+description:      This is the personal website and blog of Glendon Cheney, a software developer and musician.
 disqus_shortname: gcheney
 reading_time:     true 
 words_per_minute: 200
@@ -11,6 +11,8 @@ menu:
     url: '/'
   - title: 'Projects'
     url: '/projects/'
+  - title: 'Music'
+    url: '/music/'
   - title: 'About'
     url: '/about/'
   - title: 'Contact'
