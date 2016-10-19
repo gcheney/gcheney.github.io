@@ -134,18 +134,14 @@ $(document).ready(function() {
                 $('#sending').slideUp('fast');
             },
             success: function(data) {
-                $('#sending').slideUp( "slow", function() {
-                  $(this).hide();
-                });
+                $('#sending').hide();
                 $contactForm
                   .append('<div id="success" style="text-align: center; color: green;">Message sent successfully!</div>')
                   .hide();
                 $('#success').slideUp('fast');
           },
             error: function(err) {
-                $('#sending').slideUp( "slow", function() {
-                  $(this).hide();
-                });
+                $('#sending').hide();
                 $contactForm
                   .append('<div id="error" style="text-align: center; color: red;">Oops, there was an issue sending your message. Please try again.</div>')
                   .hide();
