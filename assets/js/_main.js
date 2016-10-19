@@ -108,13 +108,41 @@ $(document).ready(function() {
 });
 
 //built-in scroll animation
-$(document).ready(function(){
+$(document).ready(function() {
     $("a[href^=#]").click(function(e) { 
         e.preventDefault(); 
         var dest = $(this).attr('href'); 
         history.pushState(null, null, dest);
         $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow');
     });
+});
+
+// AJAX request to Formspree 
+$(document).ready(function() {
+  var $contactForm = $('#contact');
+  $contactForm.submit(function(e) {
+        e.preventDefault();
+        var email = '//formspree.io/' + 'glendon.cheney' + '@' + 'gmail' + '.' + 'com';
+        var url = 'https://formspree.io/' + email;
+        $.ajax({
+            url: url,
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            beforeSend: function() {
+                $contactForm.append('<div class="center">Sending message…</div>');
+            },
+            success: function(data) {
+                $contactForm.find('.sending').hide();
+                $contactForm.append('<div style="text-align: center; color: green;">Message sent!</div>');
+            },
+            error: function(err) {
+                $contactForm.find('.sending').hide();
+                $contactForm.append('<div style="text-align: center; color: red;">Oops, there was an issue sending your message. Please try again.</div>');
+                console.log(err);
+            }
+        });
+  });
 });
 
 
