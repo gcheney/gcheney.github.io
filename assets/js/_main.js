@@ -130,15 +130,26 @@ $(document).ready(function() {
             data: $(this).serialize(),
             dataType: 'json',
             beforeSend: function() {
-                $contactForm.append('<div class="center">Sending message…</div>');
+                $contactForm.append('<div class="center" id="sending">Sending message…</div>').hide();
+                $('#sending').slideUp('fast');
             },
             success: function(data) {
-                $contactForm.find('.sending').hide();
-                $contactForm.append('<div style="text-align: center; color: green;">Message sent!</div>');
-            },
+                $('#sending').slideUp( "slow", function() {
+                  $(this).hide();
+                });
+                $contactForm
+                  .append('<div id="success" style="text-align: center; color: green;">Message sent successfully!</div>')
+                  .hide();
+                $('#success').slideUp('fast');
+          },
             error: function(err) {
-                $contactForm.find('.sending').hide();
-                $contactForm.append('<div style="text-align: center; color: red;">Oops, there was an issue sending your message. Please try again.</div>');
+                $('#sending').slideUp( "slow", function() {
+                  $(this).hide();
+                });
+                $contactForm
+                  .append('<div id="error" style="text-align: center; color: red;">Oops, there was an issue sending your message. Please try again.</div>')
+                  .hide();
+                $('#error').slideUp('fast');
                 console.log(err);
             }
         });
