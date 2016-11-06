@@ -2,7 +2,7 @@
 layout: post
 title: Hello World
 description: 
-modified: 2016-06-17
+modified: 2016-10-01
 comments: true
 tags: [code, programming, languages, general]
 categories: [programming]
@@ -14,7 +14,7 @@ image:
 
 Hello world and welcome to my very first post! As a long time Wordpress user this is my first step into the world of the simple, blog-aware, static site generator known as [Jekyll](https://jekyllrb.com/), and what better way to start this blog off than with the traditional "Hello World" post! 
 
-I will take it one step further though and make this "Hello World" post *about* the famous first programming example so many books and tutorials have used over the years. Ever since it first appeared in the [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language), the "Hello world" example has been the go to introduction to a new programming langauge for most software developers. In honor of that, I will present "Hello World" `foreach` of the current [Tiobe Index](http://www.tiobe.com/tiobe_index) top ten programming langauges as of April 2016. This will be a great way to learn a bit of what makes each of these langauges unique in both their syntax and their design philosophy (plus it will let me test out the code highlighting styles). Lets get started! 
+I will take it one step further though and make this "Hello World" post *about* the famous first programming example so many books and tutorials have used over the years. Ever since it first appeared in the [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language), the "Hello world" example has been the go to introduction to a new programming langauge for most software developers. In honor of that, I will present "Hello World" for each of the current [Tiobe Index](http://www.tiobe.com/tiobe_index) top ten programming langauges as of April 2016. This will be a great way to learn a bit of what makes each of these langauges unique in both their syntax and their design philosophy (plus it will let me test out the code highlighting styles). Lets get started! 
 
 <!-- more -->
 
