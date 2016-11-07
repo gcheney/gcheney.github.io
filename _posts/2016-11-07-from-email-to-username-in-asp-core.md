@@ -14,7 +14,7 @@ The new [ASP.NET Core](https://docs.asp.net/en/latest/intro.html) template that 
 
 <!-- more -->
 
-First, let's pay a visit to the Controller where all of the registration and login magic happens - the ```AccountController```, whcih live sin ```Controllers/AccountController.cs```. In particular, the Register POST method is where this option is initially set. Find the line of code below, that occurs just after model validation:
+First, let's pay a visit to the Controller where all of the registration and login magic happens - the ```AccountController```, which lives in ```Controllers/AccountController.cs```. In particular, the Register POST method is where this option is initially set. Find the line of code below, that occurs just after model validation:
 
 {% highlight c# %}
 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
