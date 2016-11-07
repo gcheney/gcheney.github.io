@@ -10,11 +10,11 @@ image:
   feature: 
 ---
 
-The new [ASP.NET Core](https://docs.asp.net/en/latest/intro.html) template that gets generated in VIsual Studio (or when running the Yeoman generator with ```yo aspnet``` on OSX/Linux) conatins a lot of great features, including a fully-functioning user authentication system using [ASP.NET Identity](https://docs.asp.net/en/latest/security/authentication/identity.html). By default, this system automatically has the users email double as their username. But what if you also want to have them enter a username and use that to log in instead? This change isn't very complicated, but it will require changes to a few different files across the Models, Views, and Controllers. Making these changes can also serve as a nice way to learn more about the flow of data in an ASP.NET Core application. Let's get started! 
+The new [ASP.NET Core](https://docs.asp.net/en/latest/intro.html) template that gets generated in VIsual Studio (or when running the Yeoman generator with <code class="highlighter-rouge">yo aspnet</code> on OSX/Linux) conatins a lot of great features, including a fully-functioning user authentication system using [ASP.NET Identity](https://docs.asp.net/en/latest/security/authentication/identity.html). By default, this system automatically has the users email double as their username. But what if you also want to have them enter a username and use that to log in instead? This change isn't very complicated, but it will require changes to a few different files across the Models, Views, and Controllers. Making these changes can also serve as a nice way to learn more about the flow of data in an ASP.NET Core application. Let's get started! 
 
 <!-- more -->
 
-First, let's pay a visit to the Controller where all of the registration and login magic happens - the ```AccountController```, which lives in ```Controllers/AccountController.cs```. In particular, the Register POST method is where this option is initially set. Find the line of code below, that occurs just after model validation:
+First, let's pay a visit to the Controller where all of the registration and login magic happens - the <code class="highlighter-rouge">AccountController</code>, which lives in <code class="highlighter-rouge">Controllers/AccountController.cs</code>. In particular, the Register POST method is where this option is initially set. Find the line of code below, that occurs just after model validation:
 
 {% highlight c# %}
 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
