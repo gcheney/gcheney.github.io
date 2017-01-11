@@ -135,7 +135,7 @@ $(document).ready(function() {
             success: function(data) {
                 $contactForm.find('.sending').hide();
                 $contactForm.append('<div id="success" class="center" style="text-align: center; color: green;">Message sent successfully!</div>');
-          },
+            },
             error: function(err) {
                 $contactForm.find('.sending').hide();
                 $contactForm.append('<div id="error" class="center" style="color: red;">Oops, there was an issue sending your message. Please try again.</div>');
