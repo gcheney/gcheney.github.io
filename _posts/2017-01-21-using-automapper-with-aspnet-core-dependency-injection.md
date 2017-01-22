@@ -7,14 +7,14 @@ comments: true
 tags: [code, automapper, asp.net, .net, core, c#, dependency injection]
 categories: [ASP.NET]
 image:
-  feature: automapper.png
+  feature: 
 ---
 
 [ASP.NET Core](https://docs.asp.net/en/latest/intro.html) features out of the box dependency injection, which is very useful for mocking up controller classes when testing and helps maintain good seperation of concerns. [AutoMapper](http://automapper.org/) is the popular .NET, convention-based object-object mapper, which can be used with either that static Mapper class, or with a little additional configuration, can be used with the .NET Core Dependency Injection as well, which is what I will explore in this post. 
 
 <!-- more -->
 
-The full code for this example can be found on [Github](https://github.com/gcheney/automapper-dependency-injection). To start with, I have a model Blob class, which we will be mapping into the BlobViewModel class. The view model class is what our view will present to the user.
+The full code for this example can be found on [Github](https://github.com/gcheney/automapper-dependency-injection). To start with, I have a model Blob class, which we will be mapping into our DTO (Data Transfer Object), the BlobViewModel class. The view model class is what our view will present to the user.
 
 {% highlight c# %}
 namespace AutoMapperDI.Models
