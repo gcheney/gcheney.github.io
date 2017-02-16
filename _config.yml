@@ -48,7 +48,7 @@ social:
 background: 
 
 # Analytics and webmaster tools
-google_analytics:
+google_analytics: true
 google_verify:
 
 timezone:    America/Chicago
