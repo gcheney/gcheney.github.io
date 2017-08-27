@@ -89,59 +89,70 @@ $(document).ready(function(){
 
 
 //floating social share
-var sharing = function(){
-    $(document).ready(function(){
-      $("body").floatingSocialShare({
-        buttons: ["facebook","twitter","google-plus", "linkedin", "pinterest"],
-        text: "Share with "
-      });
+var sharing = function() {
+  $(document).ready(function() {
+    $("body").floatingSocialShare({
+      buttons: ["facebook","twitter","google-plus", "linkedin", "pinterest"],
+      text: "Share with "
     });
+  });
 };
 
 //add tranition on hover
 $(document).ready(function() {
-    $('.hover').hover(function() {
-        $(this).addClass('transition');  
-    }, function() {
-        $(this).removeClass('transition');
-    });
+  $('.hover').hover(function() {
+      $(this).addClass('transition');  
+  }, function() {
+      $(this).removeClass('transition');
+  });
 });
 
 //built-in scroll animation
 $(document).ready(function() {
-    $("a[href^=#]").click(function(e) { 
-        e.preventDefault(); 
-        var dest = $(this).attr('href'); 
-        history.pushState(null, null, dest);
-        $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow');
-    });
+  $("a[href^=#]").click(function(e) { 
+      e.preventDefault(); 
+      var dest = $(this).attr('href'); 
+      history.pushState(null, null, dest);
+      $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow');
+  });
 });
 
 // AJAX request to Formspree 
 $(document).ready(function() {
   var $contactForm = $('#contact');
+
   $contactForm.submit(function(e) {
-        e.preventDefault();
-        var email = '//formspree.io/' + 'glendon.cheney' + '@' + 'gmail' + '.' + 'com';
-        var url = 'https://formspree.io/' + email;
-        $.ajax({
-            url: url,
-            method: 'POST',
-            data: $(this).serialize(),
-            dataType: 'json',
-            beforeSend: function() {
-                $contactForm.append('<div class="center sending">Sending message…</div>');
-            },
-            success: function(data) {
-                $contactForm.find('.sending').hide();
-                $contactForm.append('<div id="success" class="center" style="text-align: center; color: green;">Message sent successfully!</div>');
-            },
-            error: function(err) {
-                $contactForm.find('.sending').hide();
-                $contactForm.append('<div id="error" class="center" style="color: red;">Oops, there was an issue sending your message. Please try again.</div>');
-                console.log(err);
-            }
-        });
+    e.preventDefault();
+    var email = '//formspree.io/' + 'glendon.cheney' + '@' + 'gmail' + '.' + 'com';
+    var url = 'https://formspree.io/' + email;
+
+    $.ajax({
+      url: url,
+      method: 'POST',
+      data: $(this).serialize(),
+      dataType: 'json',
+      beforeSend: function() {
+          $contactForm.append('<div class="center sending">Sending message…</div>');
+      },
+      success: function(data) {
+          $contactForm.find('.sending').hide();
+          $contactForm.append('<div id="success" class="center" style="text-align: center; color: green;">Message sent successfully!</div>');
+      },
+      error: function(err) {
+          $contactForm.find('.sending').hide();
+          $contactForm.append('<div id="error" class="center" style="color: red;">Oops, there was an issue sending your message. Please try again.</div>');
+          console.log(err);
+      }       
+    });
+  });
+});
+
+// typed.js 
+$(document).ready(function() {
+  $("#typed").typed({
+    strings: ["Hi. ^I'm Glendon Cheney.", "I'm a ^software developer and composer."],
+    typeSpeed: 30,
+    backDelay: 1000
   });
 });
 
